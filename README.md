@@ -23,3 +23,5 @@ Hello, warp!
 # Reference 
 
 * https://github.com/seanmonstar/warp
+
+* https://blog.logrocket.com/how-to-build-a-websocket-server-with-rust/
