@@ -8,6 +8,7 @@ use warp::Filter;
 async fn main() {
     pretty_env_logger::init();
     trace!("websocket started!");
+    
     let routes = warp::path("echo")
         // The `ws()` filter will prepare the Websocket handshake.
         .and(warp::ws())
