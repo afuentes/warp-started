@@ -1,3 +1,4 @@
+extern crate pretty_env_logger;
 use futures::{FutureExt, StreamExt};
 use warp::Filter;
 

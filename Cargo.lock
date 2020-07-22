@@ -1330,6 +1330,7 @@ dependencies = [
 name = "warp-started"
 version = "0.1.0"
 dependencies = [
+ "futures",
  "pretty_env_logger",
  "tokio",
  "warp",
