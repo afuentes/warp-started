@@ -1,11 +1,13 @@
 extern crate pretty_env_logger;
+#[macro_use] extern crate log;
+
 use futures::{FutureExt, StreamExt};
 use warp::Filter;
 
 #[tokio::main]
 async fn main() {
     pretty_env_logger::init();
-
+    trace!("websocket started!");
     let routes = warp::path("echo")
         // The `ws()` filter will prepare the Websocket handshake.
         .and(warp::ws())
